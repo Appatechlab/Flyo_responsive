@@ -1,0 +1,315 @@
+:root{
+--Dark_intro_email_sign_up: hsl(217, 28%, 15%);
+--Dark_main_background: hsl(218, 28%, 13%);
+--Dark_footer: hsl(216, 53%, 9%);
+--Dark_testimonials : hsl(219, 30%, 18%);
+--White: hsl(0, 0%, 100%);
+
+--Cyan : hsl(176, 68%, 64%);
+--Blue : hsl(198, 60%, 50%);
+
+color: var(--White);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Dark_testimonials);
+    font-size: 14px;
+    margin-top: 3em;
+    width: 100vw;
+}
+
+/****************Navigation********************/
+header{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 30px;
+}
+nav{
+    display: flex;
+    gap: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+li{
+    list-style-type: none;
+}
+
+/**********************Hero Section*********************/
+.hero{
+    /* height: 1000px; */
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15em;
+    background-image: url("./images/bg-curvy-desktop.svg");
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.hero img{
+    height: 400px;
+}
+.hero h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 1em;
+}
+.hero p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 1.5em;
+}
+button{
+    width: 240px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 1.8em;
+    border: none;
+    background: linear-gradient(to right, var(--Cyan), var(--Blue));
+    color: var(--White);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/********************Services*****************/
+.services-container{
+    /* padding-top: 10em; */
+    font-family: "Open Sans", sans-serif;
+    /* height: 100vh; */
+    background-color: var(--Dark_main_background);
+    
+}
+.services{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    gap: 4em;
+    align-items: center;
+    margin: 0 auto;
+}
+.services div{
+    text-align: center;
+}
+.services div img{
+    padding-bottom: 1em;
+}
+.services div h1{
+    font-weight: 700;
+    padding-bottom: .5em;
+}
+.services div p{
+    font-weight: 400;
+    padding-bottom: 3em;
+}
+
+/*********************Productive Section********************/
+.productive-container{
+    background-color: var(--Dark_main_background);
+    padding-top: 7em;
+    padding-bottom: 5em;
+}
+.productive{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.productive div h1{
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-bottom: .8em;
+}
+.productive div p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding-bottom: .8em;
+    font-size: 16px;
+    max-width: 700px;
+}
+.productive div a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: var(--Cyan);
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid var(--Cyan);
+}
+.productive div:last-child{
+    padding-left: 5em;
+}
+
+/*******************Testimonials*********************/
+.testimonials-container{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: var(--Dark_main_background);
+    background-image: url("./images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: top 10px left 120px;
+}
+.testimonials-container img{
+    width: 60px;
+    margin-left: 8.7%;
+}
+.testimonials{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    gap:2em;
+    width: 1440px;
+    margin: 0 auto;
+}
+.first_test, .sec_test, .third_test{
+    background-color: var(--Dark_testimonials);
+    height: 180px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+.first_test p{
+    font-size: 16px;
+}
+.image img{
+    height:45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.details{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    /* row-gap: .5em; */
+    column-gap: 1em;
+}
+small{
+    font-weight: 200;
+}
+
+/*************************Email**************************/
+.email-container{
+    padding-top: 15em;
+    /* width: 1440px; */
+    background-color: var(--Dark_main_background);
+    position: relative;
+}
+.email{
+    height: 250px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: var(--Dark_intro_email_sign_up);
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.email h1{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.email p{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 1em;
+}
+input{
+    width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border: none;
+    margin-right: 20px;
+}
+
+/***********************Footer***********************/
+footer{
+    height: 60vh;
+    background-color: var(--Dark_footer);
+    font-family: "Open Sans", sans-serif;
+}
+.custom_footer{
+    padding-top: 10em;
+    width: 1440px;
+    margin: 0 auto;
+    font-size: 16px;
+    /* background-color: aliceblue; */
+}
+.footer_detail{
+    /* border-top: 2px solid brown; */
+    display: grid;
+    /* padding-top: 8em; */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+    padding-top: 20px;
+}
+footer li{
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+footer div p{
+    line-height: 2;
+}
+.desc{
+    display: flex;
+    gap:12px;
+    align-items: flex-start;
+    width: 400px;
+}
+.desc img{
+    height: 24px;
+    padding-top: 8px;
+}
+.contact img{
+    padding-right: 14px;
+    height: 14px;
+}
+.contact div:first-child{
+    padding-bottom: 16px;
+}
+.icons{
+    display: flex;
+    gap: 1em;
+}
+i{
+    border: 1px solid var(--White);
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
